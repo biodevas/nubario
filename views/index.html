@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/styles.css">
+    <title>Subir Fotos de Nubes</title>
+</head>
+<body>
+    <h1>Subir Fotos de Nubes</h1>
+    <form action="/subir" method="POST" enctype="multipart/form-data">
+        <input type="file" name="foto" accept="image/*" required>
+        <input type="text" name="nombre_autor" placeholder="Nombre del Autor" required>
+        <input type="email" name="correo_autor" placeholder="Correo del Autor" required>
+        <button type="submit">Subir Foto</button>
+    </form>
+    <div class="grid">
+        <!-- Mostrar imágenes aquí -->
+    </div>
+    
+    <div id="imagenDetalle" class="hidden">
+        <img id="detalleFoto" src="">
+        <p id="detalleAutor"></p>
+        <p id="detalleFecha"></p>
+        <p id="detalleUbicacion"></p>
+        <p id="detalleResolucion"></p>
+        <p id="detalleTipoArchivo"></p>
+        <p id="detalleVelocidadObturador"></p>
+        <p id="detalleTiempoExposicion"></p>
+        <p id="detalleISO"></p>
+        <p id="detalleRotacionImagen"></p>
+        <p id="detalleBalanceBlancos"></p>
+        <p id="detalleDistanciaFocal"></p>
+        <p id="detalleFlash"></p>
+        <p id="detalleObjetivo"></p>
+        <p id="detalleTipoArchivoCamara"></p>
+        <p id="detalleTipoCamara"></p>
+        <p id="detalleSoftwareUtilizado"></p>
+        <p id="detalleEtiquetadoGPS"></p>
+        <!-- Agrega más detalles aquí -->
+    </div>
+    
+    <script src="/js/script.js"></script>
+</body>
+</html>

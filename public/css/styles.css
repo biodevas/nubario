@@ -1,0 +1,81 @@
+.hidden {
+    display: none;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+}
+
+.image-container {
+    cursor: pointer;
+}
+
+/* Ajustar el tamaño y la posición de las imágenes en el grid */
+.image-container {
+    cursor: pointer;
+    position: relative;
+    width: 100%;
+    padding-top: 100%; /* Proporción para mantener el aspecto de la imagen */
+    overflow: hidden;
+}
+
+.image-container img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Estilos para los detalles de la imagen */
+#imagenDetalle {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    display: none; /* Ocultar por defecto */
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+}
+
+#imagenDetalle.visible {
+    display: flex; /* Mostrar cuando tenga la clase .visible */
+}
+
+#detalleFoto {
+    max-width: 90%;
+    max-height: 90%;
+    object-fit: contain;
+    margin-bottom: 10px;
+}
+
+#detalleAutor,
+#detalleFecha,
+#detalleUbicacion,
+#detalleResolucion,
+#detalleTipoArchivo,
+#detalleVelocidadObturador,
+#detalleTiempoExposicion,
+#detalleISO,
+#detalleRotacionImagen,
+#detalleBalanceBlancos,
+#detalleDistanciaFocal,
+#detalleFlash,
+#detalleObjetivo,
+#detalleTipoArchivoCamara,
+#detalleTipoCamara,
+#detalleSoftwareUtilizado,
+#detalleEtiquetadoGPS {
+    color: white;
+    font-size: 18px;
+    margin: 5px;
+    text-align: center;
+}
+
